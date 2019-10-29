@@ -3,7 +3,7 @@
 module Avalara
   module Request
     autoload :Address, 'avalara/request/address'
-    autoload :Address, 'avalara/request/invoice_address'
+    autoload :InvoiceAddress, 'avalara/request/invoice_address'
     autoload :DetailLevel, 'avalara/request/detail_level'
     autoload :Invoice, 'avalara/request/invoice'
     autoload :Line, 'avalara/request/line'
