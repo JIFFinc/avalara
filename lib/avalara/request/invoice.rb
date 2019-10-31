@@ -21,12 +21,12 @@ module Avalara
       property :DocType, :from => :doc_type
       property :PaymentDate, :from => :payment_date
       property :Lines, :from => :lines
-      property :Addresses, :from => :invoice_addresses
+      property :Addresses, :from => :addresses
       property :ReferenceCode, :from => :reference_code
 
-      def invoice_addresses=(addresses)
+      def addresses=(addresses)
         self.Addresses = []
-        invoice_addresses.each do |address|
+        addresses.each do |address|
           self.Addresses << InvoiceAddress.new(address)
         end
       end
